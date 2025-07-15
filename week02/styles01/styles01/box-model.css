@@ -6,6 +6,7 @@
 	background-color: #247;
 	color: #fff;
 }
+/* this is my first comment in CSS*/
 
 .callout img {
 	float: right;
@@ -15,7 +16,6 @@
 	background-color: #bbb;
 	width: 100px;
 	height: auto;
-	
 }
 
 blockquote {
