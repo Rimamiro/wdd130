@@ -1,11 +1,11 @@
 :root {
     --nav-background-color: darkblue;
-    --h1
+    --h1-color: darkblue;
 }
 
 
 nav {
-    background-color: darkblue;
+    background-color: darkblue
     padding: 1px;
 }
 
