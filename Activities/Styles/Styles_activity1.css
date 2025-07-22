@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap'); /*Esto no cambia las fuentes, es solo la funcion para traer las fuentes*/
+
+body {
+    font-family: 'Roboto', Helvetica , sans-serif;
+}
+/*No es necesario que este entre comillas las fuentes para ser utilizadas, estas son fuentes que son confiables porque vienen por defecto */
+h1 {
+    font-family: 'Rock Salt', 'Bradley Hand' , 'cursive';/*es una practica recomendada poner fuentes de respaldo que sean seguras o por defoult*/
+}
+
+img source{
+    size: 3px;
+}
