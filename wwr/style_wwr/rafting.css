@@ -1,0 +1,101 @@
+:root{
+--primary-color: #696969; 
+--secondary-color: #1b8ae4;
+--accent1-color: #e59e18;
+--accent2-color: #fbfcfc;
+--heading-font: 'Fjalla One', sans-serif;
+--body-font: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header, main, footer{
+    width: 840px;
+    margin: 0;
+}
+
+h1,h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,p,section, article{
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+h1{
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #FEFEFE;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+
+}
+
+.socialmedia {
+    display: flex; /* Esto coloca los iconos en una fila horizontal */
+    justify-content: left; /* Centra los iconos horizontalmente dentro de su contenedor */
+    align-items: center; /* Alinea los iconos verticalmente (si tuvieran diferentes alturas) */
+    gap: 15px; /* Crea un espacio de 15px entre cada icono */
+    padding: 10px; /* Un poco de relleno alrededor del grupo de iconos */
+}
+
+/* Estilos específicos para las imágenes dentro de .socialmedia */
+.socialmedia img {
+    width: 32px;  /* **Establece el ancho del icono a 32 píxeles.** Puedes cambiar este valor. */
+    height: auto; /* **Crucial:** Ajusta la altura automáticamente para mantener la proporción original de la imagen. */
+    display: block; /* Asegura que la imagen se comporte como un bloque para un control más predecible */
+    
+    /* Opcional: Efecto al pasar el ratón para una mejor experiencia de usuario */
+    transition: transform 0.2s ease-in-out; /* Agrega una transición suave para el efecto de hover */
+}
+
+/* Estilo para el efecto al pasar el ratón sobre los iconos */
+.socialmedia img:hover {
+    transform: scale(1.1); /* Hace que el icono se agrande un 10% al pasar el ratón */
+}
+
+/* Opcional: Asegúrate de que los enlaces no añadan espacio extra alrededor del icono */
+.socialmedia a {
+    display: flex; /* Hace que el área del enlace se ajuste al tamaño del icono */
+    align-items: center;
+    justify-content: center;
+}
